@@ -1,0 +1,602 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    user-select: none;
+ 
+
+}
+#tvurce{
+    position: absolute;
+    top: 97%;
+    color: white;
+    left: 1%;
+    font-weight: bold;
+}
+.home{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 1%;
+    top: 1%;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.home:hover{
+    transform: scale(1.02);
+}
+#coin_counter{
+    font-size: 25px;
+    position: absolute;
+    left: 8%;
+    top: 1%;
+}
+.coins{
+    font-size: 25px;
+    position: absolute;
+    left: 19.5%;
+    top: 1%;
+    color: gold;
+    font-weight: bold;
+}
+.zivoty{
+    position: absolute;
+    left: 1%;
+    top: 37.5%;
+    
+    border: 2px solid white;
+    background-color: black;
+    font-size: 20px;
+    
+    
+    border-radius: 10px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.attack{
+    position: absolute;
+    left: 1%;
+    top: 43%;
+    
+    border: 2px solid white;
+    background-color: black;
+    font-size: 20px;
+    
+    
+    border-radius: 10px;
+    color: white;
+    padding-left: 5px;
+    padding-right: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.pocet_zivotu{
+    color: white;
+    position: absolute;
+    top: 38.2%;
+    left: 3.8%;
+    font-size: 20px;
+}
+.pocet_attacku{
+    color: white;
+    position: absolute;
+    top: 43.75%;
+    left: 5.5%;
+    font-size: 20px;
+}
+/*garaz*/
+#garaz{
+    background: url(../img/backgrounds/background_garaz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+      display: block;
+      height: 100%;
+    
+       }
+       .basic_tank{
+        position: absolute;
+        width: 320px;
+        height: 175px;
+        top: 35%;
+        left: 47%;
+        border: 1px solid black;
+        
+       }
+       #tvuj_tank{
+        position: absolute;
+        color: white;
+        top: 55%;
+        left: 52.5%;
+        font-size: 30px;
+
+       }
+#bitva{
+    position: absolute;
+    left: 50%;
+    top: 1%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+    
+}
+#bitva:hover{
+    transform: scale(1.05);
+}
+
+#upgrade{
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+#upgrade:hover{
+    transform: scale(1.05);
+}
+#skins{
+    position: absolute;
+    left: 1%;
+    top: 25%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+    display: none
+    
+    ;
+}
+#skins:hover{
+    transform: scale(1.05);
+}
+#bos{
+    position: absolute;
+    left: 1%;
+    top: 22.5%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+#bos:hover{
+    transform: scale(1.05);
+}
+/*bitevni_pole*/
+
+#bitevni_pole{
+    background: url(../img/backgrounds/background_battlefield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+
+      
+}
+#typ_urovne{
+    position: absolute;
+    font-size: 35px;
+    left: 40%;
+    top: 10%;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+#lehky{
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+#stredni{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+#tezky{
+    position: absolute;
+    left: 70%;
+    top: 40%;
+    padding: 25px;
+    border: 2px solid white;
+    background-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+#lehky:hover{
+    transform: scale(1.05);
+}
+#stredni:hover{
+    transform: scale(1.05);
+}
+#tezky:hover{
+    transform: scale(1.05);
+}
+
+/*lehke_bitevni_pole*/
+#lehka_bitva{
+    background: url(../img/backgrounds/background_battlefield.jpg); 
+   background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+}
+.enemy_tank_lehky{
+    position: absolute;
+        width: 320px;
+        height: 175px;
+        top: 35%;
+        left: 60%;
+        border: 1px solid black;
+}
+#pocet_zivotu_enemy{
+    position: absolute;
+    left: 68%;
+    top: 55%;
+    font-size: 20px;
+    color: white;
+}
+.basic_tank_lehky{
+    position: absolute;
+    width: 320px;
+    height: 175px;
+    top: 35%;
+    left: 10%;
+    border: 1px solid black;
+    
+   }
+#pocet_zivotu_lehky{
+    color: white;
+    position: absolute;
+    top: 55.75%;
+    left: 17%;
+    font-size: 20px;
+}
+#ohen{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 26%;
+    top: 40.5%;
+    display: none;
+}
+#naboj{
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 58%;
+    top: 40.5%;
+    display: none;
+}
+#button_attack{
+    position: absolute;
+    width: 320px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    left: 10%;
+    top: 61%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#destroyed_you, #destroyed_enemy{
+    position: absolute;
+    width: 320px;
+    height: 175px;
+    border: 1px solid black;
+}
+#destroyed_you{
+    left: 10%;
+    top: 35%;
+    display: none;
+}
+#destroyed_enemy{
+    left: 60%;
+    top: 35%;
+    display: none;
+}
+/*stredni_bitva_pole*/
+#stredni_bitva{
+    background:  url(../img/backgrounds/background_battlefield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+}
+#pocet_zivotu_enemy_stredni{
+    position: absolute;
+    left: 68%;
+    top: 55%;
+    font-size: 20px;
+    color: white;
+}
+#button_attack_stredni{
+    position: absolute;
+    width: 320px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    left: 10%;
+    top: 61%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#ohena{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 26%;
+    top: 40.5%;
+    display: none;
+}
+#naboja{
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 58%;
+    top: 40.5%;
+    display: none;
+}
+#pocet_zivotu_stredni{
+    color: white;
+    position: absolute;
+    top: 55.75%;
+    left: 17%;
+    font-size: 20px;
+}
+/*tezka_bitva_pole*/
+#tezka_bitva{
+    background:  url(../img/backgrounds/background_battlefield.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+}
+#pocet_zivotu_enemy_tezky{
+    position: absolute;
+    left: 68%;
+    top: 55%;
+    font-size: 20px;
+    color: white;
+}
+#pocet_zivotu_tezky{
+    color: white;
+    position: absolute;
+    top: 55.75%;
+    left: 17%;
+    font-size: 20px;
+}
+#pocet_zivotu_enemy_tezky{
+    position: absolute;
+    left: 68%;
+    top: 55%;
+    font-size: 20px;
+    color: white;
+}
+#button_attack_tezky{
+    position: absolute;
+    width: 320px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    left: 10%;
+    top: 61%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#ohenb{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 26%;
+    top: 40.5%;
+    display: none;
+}
+#nabojb{
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 58%;
+    top: 40.5%;
+    display: none;
+}
+/*bos*/
+#pocet_zivotu_boss{
+    color: white;
+    position: absolute;
+    top: 55.75%;
+    left: 17%;
+    font-size: 20px;
+}
+#pocet_zivotu_enemy_boss{
+    position: absolute;
+    left: 68%;
+    top: 55%;
+    font-size: 20px;
+    color: white;
+}
+.enemy_tank_boss{
+    position: absolute;
+    width: 320px;
+    height: 175px;
+    top: 35%;
+    left: 60%;
+    border: 1px solid black;
+}
+#ohenbos{
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    left: 26%;
+    top: 40.5%;
+    display: none;
+}
+#nabojbos{
+    position: absolute;
+    width: 65px;
+    height: 18px;
+    left: 58%;
+    top: 40.5%;
+    display: none;
+}
+#button_attack_boss{
+    position: absolute;
+    width: 320px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+    left: 10%;
+    top: 61%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*shop*/
+#shop{
+   background: url(../img/backgrounds/background_shop.jpg); 
+   background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+}
+#upgrade_hp_5, #upgrade_hp_20, #upgrade_attack_1, #upgrade_attack_5{
+    position: absolute;
+    width: 200px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    border: 2px solid white;
+    background-color: black;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+#upgrade_hp_5{
+    left: 20%;
+    top: 20%;
+}
+#upgrade_hp_20{
+    left: 60%;
+    top: 20%;
+}
+#upgrade_attack_1{
+    left: 20%;
+    top: 50%;
+}
+#upgrade_attack_5{
+    left: 60%;
+    top: 50%;
+}
+#upgrade_hp_5_cena, #upgrade_hp_20_cena, #upgrade_attack_1_cena, #upgrade_attack_5_cena{
+position: absolute;
+font-size: 25px;
+font-weight: bold;
+color: gold;
+}
+#upgrade_hp_5_cena{
+    left: 22.5%;
+    top: 27%;
+}
+#upgrade_hp_20_cena{
+    left: 62%;
+    top: 27%;
+}
+#upgrade_attack_1_cena{
+    left: 22.5%;
+    top: 57%;
+}
+#upgrade_attack_5_cena{
+    left: 62%;
+    top: 57%;
+}
+/*skiny*/
+#skiny{
+    background: url(../img/backgrounds/background_skins.jpg); 
+   background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+}
+
+/*defeate_bos*/
+#defeate_bos{
+    background: url(../img/backgrounds/background_boss.jpg); 
+   background-repeat: no-repeat;
+    background-size: cover;
+      display: none;
+      height: 100%;
+}
