@@ -1,1 +1,1 @@
-[view](https://lukas02727.github.io/game_almost_finish/)
+[Lets play!!](https://lukas02727.github.io/game_almost_finish/)
